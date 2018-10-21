@@ -59,7 +59,7 @@ namespace WebApplication
                     template: "{controller=Home}/{action=Index}/{id?}");
 
                 routes.MapRoute(
-                    name: "Blogs",
+                    name: "Blog",
                     template: "{controller=Blog}/{action=Index}/{id?}");
             });
         }

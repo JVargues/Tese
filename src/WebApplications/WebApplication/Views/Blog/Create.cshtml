@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Create Blog";
+    @model BlogModel;
+}
+
+<form action="CreateBlog" method="post">
+    <fieldset>
+        <legend>Create Blog</legend>
+        <div>
+            <label for="Title">Title:</label>
+            <input type="text" name="Title" value="" asp-for="Title" />
+            @Html.ValidationMessage("Title")
+        </div>
+        <div>
+            <textarea rows="4" cols="50" for="Title" name="Title" asp-for="Text"></textarea>
+            @Html.ValidationMessage("Text")
+        </div>
+        <div>
+            <label>&nbsp;</label>
+            <button>Create</button>
+        </div>
+    </fieldset>
+</form>
+
+<div>
+    <a asp-area="" asp-controller="Blog" asp-action="Index">Back</a>
+</div>
