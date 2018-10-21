@@ -4,7 +4,7 @@
     @model BlogModel;
 }
 
-<form action="CreateBlog" method="post">
+<form action="Create" method="post">
     <fieldset>
         <legend>Create Blog</legend>
         <div>
@@ -13,7 +13,7 @@
             @Html.ValidationMessage("Title")
         </div>
         <div>
-            <textarea rows="4" cols="50" for="Title" name="Title" asp-for="Text"></textarea>
+            <textarea rows="4" cols="50" for="Text" name="Text" asp-for="Text"></textarea>
             @Html.ValidationMessage("Text")
         </div>
         <div>

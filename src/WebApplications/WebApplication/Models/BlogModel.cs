@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Domain.Models;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using WebApplication.Models;
 
 namespace WebApplication.Models
 {
     public class BlogModel
     {
+        public long Id;
+
         [Required]
         public string Title;
 
